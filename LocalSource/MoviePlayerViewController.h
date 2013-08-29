@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MoviePlayerViewController.h
 //  LocalSource
 //
 //  Created by chenxie on 13-1-30.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface MoviePlayerViewController : BaseViewController
 
-@property (strong, nonatomic) UIWindow *window;
 
 @end

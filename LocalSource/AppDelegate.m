@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+
 
 @implementation AppDelegate
 
@@ -21,6 +23,14 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    {
+        RootViewController  *rootVC = [[RootViewController  alloc]init];
+        self.window.rootViewController = rootVC;
+        [rootVC release];
+
+    }
+       
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -50,6 +60,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+ -(NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end
