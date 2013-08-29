@@ -42,6 +42,8 @@
 {
     [super viewDidLoad];
 	
+    self.view.backgroundColor = [UIColor  yellowColor];
+    
     UIButton  *imgPickBtn = [UIButton   buttonWithType:UIButtonTypeRoundedRect];
     imgPickBtn.tag = 1001;
     imgPickBtn.frame = CGRectMake(40, 40, 240, 60);
